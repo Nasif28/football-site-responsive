@@ -55,7 +55,6 @@ header .menu ul li a:hover {
 
 .cover {
     background-color: #2D25A0;
-    color: white;
     display: flex;
 }
 
@@ -68,6 +67,7 @@ header .menu ul li a:hover {
     font-weight: 700;
     font-size: 60px;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .cover-button {
@@ -148,7 +148,7 @@ header .menu ul li a:hover {
     margin: 10px 0px;
 }
 
-.player-text p {
+.player-details p {
     color: #6C6C6C;
     font-size: 16px;
     font-weight: 400;
@@ -253,18 +253,22 @@ header .menu ul li a:hover {
 
 .bottom-text {
     width: 50%;
-    margin: 10% 0% 10% 10%;
+    margin: 8% 0% 10% 10%;
 }
 
 .bottom-text h1 {
     font-weight: 700;
     font-size: 46px;
     margin-bottom: 15px;
+    color: #18191F;
 }
 
 .bottom-text p {
     margin-bottom: 30px;
     width: 404px;
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .bottom-cover-button {
@@ -350,10 +354,9 @@ footer {
         font-size: 40px;
         margin-bottom: 20px;
         padding: 5%;
-        text-align: center;
     }
     .cover-button {
-       margin-left: 10px;
+       margin-left: 20px;
     }
     .cover img {
         width: 80%;
@@ -364,59 +367,46 @@ footer {
     }
     .players {
         grid-template-columns: repeat(1, 1fr);
-        margin: 5%;
+        margin: 10% 2.8%;
+
         grid-column-gap: 27px;
-        grid-row-gap: 27px;
+     
     }
     .player {
         flex-direction: column;
         height: 474px;
-        width: 330px;
-        margin: 5%;
+        width: 310px;
+        margin: 5% 0%;
+     
     }
-    .player h1 {
-        text-align: center;
-    }
-    .player p {
-        text-align: justify;
-    }
+ 
     .clubs {
-        margin: 70px 70px;
+        margin: 10% 0%;
+        padding: 10% 2%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
     }
     .club {
         height: auto;
-        width: 100%;
-        padding: 15px 15px 33px 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     }
     .club img {
         width: 50%;
     }
     .countries h1 {
-        font-weight: 700;
-        font-size: 40px;
-        color: #ffffff;
         text-align: center;
-        padding: 10px;
     }
     .country {
-        margin: 5px;
-        padding: 5px;
-        display: grid;
+        margin: 5px 0px;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 5px;
+     
     }
     .country img {
-        width: 90px;
-        height: 60px;
+        width: 80px;
+        height: 52px;
         border: 1px solid white;
         border-radius: 3px;
     }
@@ -424,41 +414,26 @@ footer {
         flex-direction: column;
         margin: 10px 0px;
     }
-    .bottom-cover img {
-        width: 80%;
-        margin-left: 10%;
-    }
+ 
     .bottom-cover-text, .bottom-image {
         width: 100%;
     }
     .bottom-text {
         width: 100%;
-        margin: 10% 0%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 10% 0% 10% 5%;
+      
     }
     .bottom-text h1 {
-        font-weight: 700;
         font-size: 40px;
-        text-align: center;
     }
-    .bottom-text p {
-        width: 404px;
-    }
-    .bottom-cover-button {
-        font-size: 16px;
-        background-color: #E02C6D;
-        text-decoration: none;
-        padding: 10px 24px;
-        color: white;
-    }
-    .bottom-image {
-        width: 100%;
-        margin: 10% 0%;
-    }
+
+
     .bottom-image img {
-        width: 80%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .footer-image img {
+        width: 300px;
     }
 }
 
