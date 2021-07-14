@@ -1,0 +1,474 @@
+/* Common Styles Starts*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common Styles Ends*/
+
+/* Header Start */
+
+header {
+    background-color: #2D25A0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0% 10%;
+    padding-top: 5%;
+}
+
+header .menu ul {
+    flex: 60%;
+    list-style: none;
+}
+
+header .menu ul li {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+header .menu ul li a:hover {
+    background-color: white;
+    color: #2D25A0;
+    border-radius: 5px;
+}
+
+/* Header Ends */
+
+/* Cover Start */
+
+.cover {
+    background-color: #2D25A0;
+    color: white;
+    display: flex;
+}
+
+.cover-text {
+    width: 50%;
+    margin: 10% 0% 10% 10%;
+}
+
+.cover-text h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.cover-button {
+    font-size: 16px;
+    background-color: #E02C6D;
+    text-decoration: none;
+    padding: 10px 24px;
+    color: white;
+}
+
+.cover-button:hover {
+    background-color: #2D25A0;
+    border: 2px solid #E02C6D;
+    border-style: ridge;
+}
+
+.cover-image {
+    width: 50%;
+    margin: 7% 10% 7% 0%;
+}
+
+.cover-image img {
+    width: 100%;
+}
+
+/* Image Hover Animation */
+
+@keyframes cover-image {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cover-image:hover {
+    animation-name: cover-image;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Cover End */
+
+/* Section Players Starts */
+
+.players {
+    margin: 70px 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 27px;
+}
+
+.player {
+    height: 474px;
+    width: 330px;
+    padding: 15px 15px 33px 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+.player-image img {
+    width: 100%;
+}
+
+.player-title h1 {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.player-text p {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Section Players Ends */
+
+/* Clubs Starts */
+
+.top-clubs h1 {
+    font-weight: 700;
+    font-size: 46px;
+    color: #18191F;
+    text-align: center;
+}
+
+.clubs {
+    margin: 70px 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.club {
+    height: 200px;
+    width: auto;
+    padding: 15px 15px 33px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.club:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+.club:hover .club-details h1 {
+    color: #2D25A0;
+}
+
+.club img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.club-details h1 {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.club-details p {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+/* Clubs Ends */
+
+/* Country Starts */
+
+.countries {
+    background-color: #2D25A0;
+}
+
+.countries h1 {
+    font-weight: 700;
+    font-size: 46px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.country {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5px;
+}
+
+.country img {
+    width: 150px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* Country Ends */
+
+/* Bottom Cover Section Starts */
+
+.bottom-cover {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.bottom-text {
+    width: 50%;
+    margin: 10% 0% 10% 10%;
+}
+
+.bottom-text h1 {
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.bottom-text p {
+    margin-bottom: 30px;
+    width: 404px;
+}
+
+.bottom-cover-button {
+    font-size: 16px;
+    background-color: #E02C6D;
+    text-decoration: none;
+    padding: 10px 24px;
+    color: white;
+}
+
+.bottom-cover-button:hover {
+    color: black;
+    background-color: #ffffff;
+    border: 2px solid #E02C6D;
+    border-style: ridge;
+}
+
+.bottom-image {
+    width: 50%;
+    margin: 7% 10% 7% 0%;
+}
+
+.bottom-image img {
+    width: 100%;
+}
+
+/* Bottom Cover Section Ends */
+
+/* Footer Starts */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer-image img {
+    width: 400px;
+}
+
+.footer-icons {
+    margin: 10px 0px;
+}
+
+.footer-icons i {
+    color: #969BAB;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #0b0d1723;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+}
+
+.footer-icons i:hover {
+    color: #2D25A0;
+}
+
+/* Footer Ends */
+
+/* Media Queries */
+
+/* Mobile Device */
+
+@media only screen and (max-width: 688px) {
+    nav {
+        margin: 0px;
+    }
+    .menu {
+        display: none;
+    }
+    .cover {
+        flex-direction: column;
+    }
+    .cover-text {
+        width: 50%;
+        margin: 5% 0%;
+    }
+    .cover-text h1 {
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 20px;
+        padding: 5%;
+        text-align: center;
+    }
+    .cover-button {
+       margin-left: 10px;
+    }
+    .cover img {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .cover-text, .cover-image {
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5%;
+        grid-column-gap: 27px;
+        grid-row-gap: 27px;
+    }
+    .player {
+        flex-direction: column;
+        height: 474px;
+        width: 330px;
+        margin: 5%;
+    }
+    .player h1 {
+        text-align: center;
+    }
+    .player p {
+        text-align: justify;
+    }
+    .clubs {
+        margin: 70px 70px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+    .club {
+        height: auto;
+        width: 100%;
+        padding: 15px 15px 33px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    .club img {
+        width: 50%;
+    }
+    .countries h1 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+    }
+    .country {
+        margin: 5px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+    }
+    .country img {
+        width: 90px;
+        height: 60px;
+        border: 1px solid white;
+        border-radius: 3px;
+    }
+    .bottom-cover {
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    .bottom-cover img {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .bottom-cover-text, .bottom-image {
+        width: 100%;
+    }
+    .bottom-text {
+        width: 100%;
+        margin: 10% 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-text h1 {
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+    }
+    .bottom-text p {
+        width: 404px;
+    }
+    .bottom-cover-button {
+        font-size: 16px;
+        background-color: #E02C6D;
+        text-decoration: none;
+        padding: 10px 24px;
+        color: white;
+    }
+    .bottom-image {
+        width: 100%;
+        margin: 10% 0%;
+    }
+    .bottom-image img {
+        width: 80%;
+    }
+}
+
+/* Tablet Device */
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
