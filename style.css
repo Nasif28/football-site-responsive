@@ -49,6 +49,14 @@ header .menu ul li a:hover {
     border-radius: 5px;
 }
 
+.nav-button {
+    font-size: 16px;
+    background-color: #E02C6D;
+    text-decoration: none;
+    padding: 10px 24px;
+    color: white;
+}
+
 /* Header Ends */
 
 /* Cover Start */
@@ -158,6 +166,10 @@ header .menu ul li a:hover {
 
 /* Clubs Starts */
 
+.top-clubs {
+    margin: 100px 0px;
+}
+
 .top-clubs h1 {
     font-weight: 700;
     font-size: 46px;
@@ -166,7 +178,7 @@ header .menu ul li a:hover {
 }
 
 .clubs {
-    margin: 70px 70px;
+    margin: 30px 70px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px;
@@ -192,7 +204,7 @@ header .menu ul li a:hover {
 }
 
 .club img {
-    width: 100%;
+    width: 50%;
     margin-top: 10px;
 }
 
@@ -217,22 +229,24 @@ header .menu ul li a:hover {
 
 .countries {
     background-color: #2D25A0;
+    padding: 20px;
 }
 
 .countries h1 {
     font-weight: 700;
-    font-size: 46px;
+    font-size: 60px;
     color: #ffffff;
     text-align: center;
     padding: 20px;
 }
 
 .country {
-    margin: 10px;
-    padding: 10px;
+    margin: 20px 0px;
+    padding: 5px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-gap: 5px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
 .country img {
@@ -253,13 +267,13 @@ header .menu ul li a:hover {
 
 .bottom-text {
     width: 50%;
-    margin: 8% 0% 10% 10%;
+    margin: 10% 0% 10% 10%;
 }
 
 .bottom-text h1 {
     font-weight: 700;
-    font-size: 46px;
-    margin-bottom: 15px;
+    font-size: 50px;
+    margin-bottom: 20px;
     color: #18191F;
 }
 
@@ -308,7 +322,7 @@ footer {
 }
 
 .footer-image img {
-    width: 400px;
+    width: 500px;
 }
 
 .footer-icons {
@@ -336,12 +350,17 @@ footer {
 /* Mobile Device */
 
 @media only screen and (max-width: 688px) {
+    /* Header */
     nav {
         margin: 0px;
     }
     .menu {
         display: none;
     }
+    .nav-button {
+        margin-left: 220px;
+    }
+    /* Cover */
     .cover {
         flex-direction: column;
     }
@@ -356,7 +375,7 @@ footer {
         padding: 5%;
     }
     .cover-button {
-       margin-left: 20px;
+        margin-left: 20px;
     }
     .cover img {
         width: 80%;
@@ -365,21 +384,19 @@ footer {
     .cover-text, .cover-image {
         width: 100%;
     }
+    /* Player */
     .players {
         grid-template-columns: repeat(1, 1fr);
         margin: 10% 2.8%;
-
         grid-column-gap: 27px;
-     
     }
     .player {
         flex-direction: column;
         height: 474px;
         width: 310px;
         margin: 5% 0%;
-     
     }
- 
+    /* Clubs */
     .clubs {
         margin: 10% 0%;
         padding: 10% 2%;
@@ -396,56 +413,66 @@ footer {
     .club img {
         width: 50%;
     }
+    /* Countries */
     .countries h1 {
         text-align: center;
+        font-size: 30px;
     }
     .country {
         margin: 5px 0px;
         grid-template-columns: repeat(4, 1fr);
-     
     }
     .country img {
-        width: 80px;
-        height: 52px;
+        width: 65px;
+        height: 45px;
         border: 1px solid white;
         border-radius: 3px;
     }
+    /* Bottom Cover */
     .bottom-cover {
         flex-direction: column;
         margin: 10px 0px;
     }
- 
     .bottom-cover-text, .bottom-image {
         width: 100%;
     }
     .bottom-text {
-        width: 100%;
-        margin: 10% 0% 10% 5%;
-      
+        width: 90%;
+        margin: 0%;
+        padding: 5%;
     }
     .bottom-text h1 {
-        font-size: 40px;
+        font-size: 30px;
+        width: 100%;
     }
-
-
+    .bottom-text p {
+        width: 329px;
+    }
     .bottom-image img {
         width: 90%;
         margin-left: 5%;
     }
+    /* Footer */
     .footer-image img {
         width: 300px;
+        margin: 30px;
     }
 }
 
 /* Tablet Device */
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
+    /* Header */
     nav {
         margin: 0px;
     }
     .menu {
         display: none;
     }
+    .nav-button {
+        margin-left: 600px;
+    }
+    /* Cover */
     .cover {
         flex-direction: column;
     }
@@ -460,7 +487,7 @@ footer {
         padding: 5%;
     }
     .cover-button {
-       margin-left: 40px;
+        margin-left: 40px;
     }
     .cover img {
         width: 80%;
@@ -469,20 +496,21 @@ footer {
     .cover-text, .cover-image {
         width: 100%;
     }
+    /* Player */
     .players {
         grid-template-columns: repeat(2, 1fr);
         margin: 10% 4%;
         grid-column-gap: 27px;
-     
     }
     .player {
         flex-direction: column;
         height: 474px;
         width: 310px;
     }
- .top-clubs{
-     margin-top: 20%;
- }
+    /* Clubs */
+    .top-clubs {
+        margin-top: 20%;
+    }
     .clubs {
         margin: 5% 0%;
         padding: 5% 2%;
@@ -499,8 +527,9 @@ footer {
     }
     .club img {
         width: 60%;
-       margin-bottom: 10%;
+        margin-bottom: 10%;
     }
+    /* Countries */
     .countries h1 {
         text-align: center;
     }
@@ -515,31 +544,30 @@ footer {
         border-radius: 3px;
         margin: 5px 2px;
     }
+    /* Bottom Cover */
     .bottom-cover {
         flex-direction: column;
         margin: 10px 0px;
     }
- 
     .bottom-cover-text, .bottom-image {
         width: 100%;
     }
     .bottom-text {
         width: 100%;
         margin: 10% 0% 0% 5%;
-      
     }
     .bottom-text h1 {
         font-size: 60px;
     }
-.bottom-text p{
-    font-size: 16px;
-width: 500px;
-}
-
+    .bottom-text p {
+        font-size: 16px;
+        width: 500px;
+    }
     .bottom-image img {
         width: 100%;
         margin-left: 5%;
     }
+    /* Footer */
     .footer-image img {
         width: 300px;
     }
