@@ -262,10 +262,11 @@ header .menu ul li a:hover {
     border-radius: 5px;
 }
 
-.country img:hover{
+.country img:hover {
     transform: scale(1.2);
     transition: trasnform ease-in-out;
 }
+
 /* Country Ends */
 
 /* Bottom Cover Section Starts */
