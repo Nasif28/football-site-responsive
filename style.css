@@ -57,6 +57,12 @@ header .menu ul li a:hover {
     color: white;
 }
 
+.nav-button:hover {
+    background-color: #2D25A0;
+    border: 2px solid #E02C6D;
+    border-style: ridge;
+}
+
 /* Header Ends */
 
 /* Cover Start */
@@ -119,7 +125,7 @@ header .menu ul li a:hover {
     animation-name: cover-image;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
 }
 
 /* Cover End */
@@ -256,6 +262,10 @@ header .menu ul li a:hover {
     border-radius: 5px;
 }
 
+.country img:hover{
+    transform: scale(1.2);
+    transition: trasnform ease-in-out;
+}
 /* Country Ends */
 
 /* Bottom Cover Section Starts */
@@ -354,9 +364,9 @@ footer {
     nav {
         margin: 0px;
     }
-.login-icon{
-    margin-top: 20px;
-}
+    .login-icon {
+        margin-top: 20px;
+    }
     .menu {
         display: none;
     }
@@ -397,10 +407,9 @@ footer {
         flex-direction: column;
         height: 474px;
         width: 310px;
-       
     }
     /* Clubs */
-    .top-clubs{
+    .top-clubs {
         margin: 40px 0px;
     }
     .clubs {
@@ -420,7 +429,6 @@ footer {
         width: 50%;
     }
     /* Countries */
-  
     .countries h1 {
         text-align: center;
         font-size: 30px;
@@ -515,7 +523,6 @@ footer {
         width: 310px;
     }
     /* Clubs */
-  
     .clubs {
         margin: 5% 0%;
         padding: 0% 2%;
