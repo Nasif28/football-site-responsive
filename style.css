@@ -354,11 +354,14 @@ footer {
     nav {
         margin: 0px;
     }
+.login-icon{
+    margin-top: 20px;
+}
     .menu {
         display: none;
     }
     .nav-button {
-        margin-left: 220px;
+        margin-left: 230px;
     }
     /* Cover */
     .cover {
@@ -387,19 +390,22 @@ footer {
     /* Player */
     .players {
         grid-template-columns: repeat(1, 1fr);
-        margin: 10% 2.8%;
+        margin: 15% 2.8%;
         grid-column-gap: 27px;
     }
     .player {
         flex-direction: column;
         height: 474px;
         width: 310px;
-        margin: 5% 0%;
+       
     }
     /* Clubs */
+    .top-clubs{
+        margin: 40px 0px;
+    }
     .clubs {
-        margin: 10% 0%;
-        padding: 10% 2%;
+        margin: 0% 0%;
+        padding: 5% 2%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -414,6 +420,7 @@ footer {
         width: 50%;
     }
     /* Countries */
+  
     .countries h1 {
         text-align: center;
         font-size: 30px;
@@ -431,7 +438,7 @@ footer {
     /* Bottom Cover */
     .bottom-cover {
         flex-direction: column;
-        margin: 10px 0px;
+        margin: 40px 0px;
     }
     .bottom-cover-text, .bottom-image {
         width: 100%;
@@ -455,7 +462,7 @@ footer {
     /* Footer */
     .footer-image img {
         width: 300px;
-        margin: 30px;
+        margin: 10px;
     }
 }
 
@@ -508,12 +515,10 @@ footer {
         width: 310px;
     }
     /* Clubs */
-    .top-clubs {
-        margin-top: 20%;
-    }
+  
     .clubs {
         margin: 5% 0%;
-        padding: 5% 2%;
+        padding: 0% 2%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 15px;
@@ -542,7 +547,7 @@ footer {
         height: 115px;
         border: 2px solid white;
         border-radius: 3px;
-        margin: 5px 2px;
+        margin: 5px 0px;
     }
     /* Bottom Cover */
     .bottom-cover {
@@ -553,7 +558,7 @@ footer {
         width: 100%;
     }
     .bottom-text {
-        width: 100%;
+        width: 90%;
         margin: 10% 0% 0% 5%;
     }
     .bottom-text h1 {
@@ -564,11 +569,11 @@ footer {
         width: 500px;
     }
     .bottom-image img {
-        width: 100%;
+        width: 90%;
         margin-left: 5%;
     }
     /* Footer */
     .footer-image img {
-        width: 300px;
+        width: 400px;
     }
 }
