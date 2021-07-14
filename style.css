@@ -440,10 +440,107 @@ footer {
 /* Tablet Device */
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
-    .container {
+    nav {
+        margin: 0px;
+    }
+    .menu {
+        display: none;
+    }
+    .cover {
+        flex-direction: column;
+    }
+    .cover-text {
+        width: 100%;
+        margin: 5% 0%;
+    }
+    .cover-text h1 {
+        font-weight: 700;
+        font-size: 75px;
+        margin-bottom: 20px;
+        padding: 5%;
+    }
+    .cover-button {
+       margin-left: 40px;
+    }
+    .cover img {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .cover-text, .cover-image {
         width: 100%;
     }
     .players {
         grid-template-columns: repeat(2, 1fr);
+        margin: 10% 4%;
+        grid-column-gap: 27px;
+     
+    }
+    .player {
+        flex-direction: column;
+        height: 474px;
+        width: 310px;
+    }
+ .top-clubs{
+     margin-top: 20%;
+ }
+    .clubs {
+        margin: 5% 0%;
+        padding: 5% 2%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+    }
+    .club {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .club img {
+        width: 60%;
+       margin-bottom: 10%;
+    }
+    .countries h1 {
+        text-align: center;
+    }
+    .country {
+        margin: 5px 0px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .country img {
+        width: 170px;
+        height: 115px;
+        border: 2px solid white;
+        border-radius: 3px;
+        margin: 5px 2px;
+    }
+    .bottom-cover {
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+ 
+    .bottom-cover-text, .bottom-image {
+        width: 100%;
+    }
+    .bottom-text {
+        width: 100%;
+        margin: 10% 0% 0% 5%;
+      
+    }
+    .bottom-text h1 {
+        font-size: 60px;
+    }
+.bottom-text p{
+    font-size: 16px;
+width: 500px;
+}
+
+    .bottom-image img {
+        width: 100%;
+        margin-left: 5%;
+    }
+    .footer-image img {
+        width: 300px;
     }
 }
